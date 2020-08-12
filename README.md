@@ -14,5 +14,5 @@ Src
 |-> controllers    # functions to connect routes to db operations
 |-> db             # db connection and model definitions
 |-> public         # html, css for static part of site.
-|->routes          # express middlewares (route wise)
+|-> routes         # express middlewares (route wise)
 ```
