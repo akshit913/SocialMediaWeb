@@ -4,7 +4,7 @@ const app = express()
 
 
 
-db.sync()
+db.sync({force: true})
     .then(() => {
         app.listen('5000', () => {
             console.log('Server started at http://localhost:5000')

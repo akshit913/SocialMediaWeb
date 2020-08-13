@@ -20,7 +20,7 @@ const COL_USERNAME_DEF = {
 }
 
 const COL_TITLE_DEF = {
-    type = Sequelize.DataTypes.STRING(140),
+    type : Sequelize.DataTypes.STRING(140),
     allowNull: false
 }
 
@@ -42,9 +42,20 @@ const Comments = db.define('comment', {
     id: COL_ID_DEF,
     title: COL_TITLE_DEF,
     body: {
-
+        type: Sequelize.DataTypes.TEXT('tiny')
     }
 })
+
+Users.hasMany(Posts)
+Posts.belongsTo(Users)
+
+Users.hasMany(Comments)
+Comments.belongsTo(Users)
+
+Posts.hasMany(Comments)
+Comments.belongsTo(Posts)
+
+
 module.exports = {
     db,
     Users,
