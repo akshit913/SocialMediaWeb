@@ -24,7 +24,7 @@ Src
 1. **create users**
     this will create a new user with random username
 
-## Posts
+### Posts
 
 1. **create posts**
     this will create a new post, required fields are
