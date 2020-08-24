@@ -50,3 +50,38 @@ Src
 2. **show all comments (under a post)**
 
 3. **add a comment**
+
+
+## API Documentation
+
+### `users`
+
+1. `POST /users`
+
+Creates a new user with random username and user id.]
+
+2. `GET /users/{userid}`
+
+Get an user with a given user id
+
+3. `GET /users/{username}`
+
+Get and user with a given username
+
+### `posts`
+
+1. `GET /posts`
+
+Get all posts by everyone
+
+2. `POST /posts`
+
+Create a new post.
+Required fields in body - 
+
+```
+userId=
+title=
+body=
+
+```
