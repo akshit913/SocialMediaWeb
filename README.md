@@ -9,6 +9,25 @@ flush privileges;
 
 ## Project Structure
 
+### Front end
+
+```shell
+./src/public/
+├── app                         # our frontend js code
+│   └── social-common.js
+├── components                  # our own html snippets
+│   └── navbar.html
+├── css                         # css libraries in use
+│   └── bootstrap.css
+├── fonts                       # fonts being used
+├── index.html                  # homepage 
+└── js                          # js frameworks in use
+    ├── bootsrap.js
+    ├── jquery.js
+    └── popper.js
+```
+### Back end
+
 ```shell
 Src
 |-> controllers    # functions to connect routes to db operations
